@@ -1,0 +1,37 @@
+URL validation service
+- It should ensure that the inputs are valid URLs
+- It should reject malformed URLs
+- It should properly handle URLs with special characters
+- It should accept URLs with different protocols
+- It should accept URLs with and without query parameters
+- It consider sub domianed URLs as valid
+- It should handle URLs with fragments
+- It should handle extremely long urls
+- It should reject empty input fields
+
+URL encoder service
+- It should generate a six charater alpha-numeric string from an input
+- It should be a correct base 62 encoding
+- It should no encode empty strings
+- It should encoode strings with special characters
+- It should always return same output from a specific input
+- It should produce different output when different inputs are provided
+
+InMemoryService
+- It should save the url mapping in the correct format
+- It should retreive the correct saved short url and original URL
+- It should return null for empty urls (short and original)
+- It should detect collision
+- It should consistently and accurately map urlToCode and CodeToUrl
+
+CachManagementService
+- It should cache original URL to short Code and shortcode to original url
+- It should retrieve correct url mappings (shortcode -> url & url -> shortcode)
+- It should return item from memory when entry is not in cache
+- It should expire cache entry after TTL
+- It should update the value in cache if the same key is saved
+
+
+
+
+https://www.thisisalongdomain.com/with/some/parameters?and=here_too

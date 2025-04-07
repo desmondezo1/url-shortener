@@ -1,0 +1,6 @@
+HTTP Controller tests
+- It should return the proper format of JSON response from the encode endpoint
+- It should return the proper format of JSON from decode endpoint
+- It should return proper error format of response from both the decode and encode
+- It should respond with an error when invalid input is provided
+- It should respond with the correct status codes from both enpoints
