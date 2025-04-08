@@ -1,4 +1,5 @@
 <?php
+// tests/TestCase.php
 
 namespace Tests;
 
@@ -13,6 +14,6 @@ abstract class TestCase extends BaseTestCase
      */
     public function createApplication()
     {
-        return require __DIR__.'/../bootstrap/app.php';
+        return require __DIR__ . '/../bootstrap/app.php';
     }
 }
